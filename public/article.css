@@ -1,0 +1,32 @@
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+}
+ul {
+  list-style-type: none;
+}
+.active {
+  background-color: lightblue;
+}
+.addForm {
+  display: flex;
+  flex-direction: column;
+}
+.red {
+  border: 1px solid red;
+}
+strong {
+  text-transform: uppercase;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination li {
+  display: inline-block;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.pagination li:hover {
+  background-color: lightgreen
+}
