@@ -22,17 +22,13 @@ module.exports = function(config) {
       plugins: [
         'karma-chrome-launcher',
         'karma-jasmine',
+        'karma-coverage',
         'karma-junit-reporter'
       ],
-
-      reporters: ['progress', 'coverage'],
-
       preprocessors: {
-        // source files, that you wanna generate coverage for
-        // do not include tests or libraries
-        // (these files will be instrumented by Istanbul)
-        'public/*.js': ['coverage']
+        'src/**/*.js': ['coverage']
       },
+      reporters: ['progress', 'coverage'],
 
       coverageReporter: {
         type : 'html',
