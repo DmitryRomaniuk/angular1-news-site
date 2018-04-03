@@ -1,3 +1,7 @@
+coverage
+karma-coverage
+karma-html
+istanbul-reporter
 # Logs
 logs
 *.log

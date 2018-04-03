@@ -6,6 +6,7 @@
   "scripts": {
     "test": "karma start karma.conf.js",
     "str": "stryker run",
+    "istanbul": "istanbul cover public/article.js",
     "start": "node server.js"
   },
   "repository": {
@@ -30,9 +31,12 @@
   },
   "devDependencies": {
     "angular-mocks": "^1.6.9",
+    "istanbul": "^0.4.5",
     "jasmine-core": "^3.1.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-coverage": "^1.1.1",
+    "karma-coverage-istanbul-reporter": "^1.4.2",
+    "karma-html-reporter": "^0.2.7",
     "karma-jasmine": "^1.1.1",
     "karma-junit-reporter": "^1.2.0",
     "stryker": "^0.20.1",
